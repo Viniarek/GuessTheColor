@@ -1,0 +1,102 @@
+html{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+header{
+    width: 100%;
+    height: 10%;
+    background-color: rgb(235, 250, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+h1{
+    color: #151e27;
+    font-family:Verdana, Geneva, Tahoma, sans-serifg;
+}
+#colorGuess{
+    width: 30%;
+    height: 150px;
+    background-color: #151e27;
+    border: #151e27 1px solid;
+    border-radius: 15px;
+}
+.container{
+    height: 25%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container2{
+    height: 25%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#colorGuess{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container3{
+    height: 25%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#counter{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 48px;
+    letter-spacing: 4px;
+    text-align: center;
+}
+#refresh{
+    font-size: 36px;
+}
+.button {
+    margin-left: 15px;
+    margin-right: 15px;
+    width: 30%;
+    height: 30%;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: #479ed1;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .button:hover {background-color: #3e828e}
+  .button:active {
+    background-color: #3e6a8e;
+    box-shadow: 0 5px #151e27;
+    transform: translateY(4px);
+  }
+  footer{
+    height: 15%;
+    width: 100%;
+    background-color: #3e828e;
+  }
+
+  #button0,#button1, #button2{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+  }
+
