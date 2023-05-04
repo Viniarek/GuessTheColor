@@ -26,10 +26,15 @@ h1{
 #colorGuess{
     width: 30%;
     height: 150px;
-    background-color: #151e27;
     border: #151e27 1px solid;
     border-radius: 15px;
+    transition: background-color 0.25s ease-in-out;
 }
+
+#colorguess:hover {
+    background-color: #479ed1;
+}
+
 .container{
     height: 25%;
     width: 100%;
@@ -82,13 +87,20 @@ h1{
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: background-color 0.25s, box-shadow 0.25s, transform 0.1s;
   }
-  .button:hover {background-color: #3e828e}
+  .button:hover {
+    background-color: #3e828e;
+    box-shadow: 0 5px #151e27;
+}
+
   .button:active {
     background-color: #3e6a8e;
     box-shadow: 0 5px #151e27;
-    transform: translateY(4px);
+    transform: scale(0.95);
+    
   }
+
   footer{
     height: 15%;
     width: 100%;

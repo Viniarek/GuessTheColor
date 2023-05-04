@@ -1,13 +1,7 @@
 var points = 0;
-var isRunning = true;
-var clickedButton = 0;
-
 let correctPick = 0;
-console.log(correctPick);
+
 actualGame();
-console.log(correctPick);
-
-
 
 function generateColor() {
         let r = Math.floor(Math.random()*255);
@@ -21,10 +15,6 @@ function showColor(correctColor) {
 
 function arrayOfColors(){
     return [generateColor(), generateColor(), generateColor()];
-}
-
-function insertValuesIntoButtons(){
-
 }
 
 
@@ -69,9 +59,11 @@ function reset(){
         points = 0;
         text.innerHTML = 'Game Over! <p id="refresh">(refresh page for retry!)</p>'
         text.style.color = 'red';
-        myTimeout();
-        
     }
+}
+
+function gameOver(){
+    
 }
 
 
