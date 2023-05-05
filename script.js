@@ -40,8 +40,6 @@ but1.addEventListener("click", reset);
 const but2 = document.getElementById('but2');
 but2.addEventListener("click", reset);
 
-//let myTimeout = setTimeout(this.reload, 5000);
-
 function reset(){
     let text = document.getElementById('counter');
     
@@ -57,13 +55,19 @@ function reset(){
     }
     else{
         points = 0;
-        text.innerHTML = 'Game Over! <p id="refresh">(refresh page for retry!)</p>'
+        text.innerHTML = 'Game Over!'+'<button class="button" id="but3">Retry</button>';
         text.style.color = 'red';
+
+        const but3 = document.getElementById('but3');
+        but3.addEventListener("click", ()=>{
+            location.reload();
+        });
+        but0.removeEventListener("click", reset);
+        but1.removeEventListener("click", reset);
+        but2.removeEventListener("click", reset);
     }
 }
 
-function gameOver(){
-    
-}
+
 
 
